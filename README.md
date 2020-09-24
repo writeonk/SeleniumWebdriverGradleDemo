@@ -7,6 +7,7 @@ Automation test suite for Web Application
 - Gradle project Architecture
 - Cross browser Testing
 - Extent Report
+- Log4j2 for logs
 
 ### Setup Project on Machine for work 
 
