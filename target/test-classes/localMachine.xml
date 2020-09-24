@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="2">
+	<test name="Test">
+		<classes>
+			<class name="TC01Login"/>
+<!--		<class name="com.novohq.app.TC02Dashboard"/>
+			<class name="com.novohq.app.TC03Activity"/>
+			<class name="com.novohq.app.TC04MakeAPayment"/>
+			<class name="com.novohq.app.TC05AccountInfo"/>
+			<class name="com.novohq.app.TC06ChangePassword"/>
+			<class name="com.novohq.app.TC07ForgotPassword"/>-->
+		</classes>
+	</test>
+</suite>

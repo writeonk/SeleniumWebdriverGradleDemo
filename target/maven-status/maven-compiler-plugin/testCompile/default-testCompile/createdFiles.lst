@@ -1,0 +1,9 @@
+com/novohq/app/TC03Activity.class
+com/novohq/app/TC07ForgotPassword.class
+com/novohq/app/TC01Login.class
+com/novohq/app/TC02Dashboard.class
+library/WebDriver.class
+com/novohq/app/TC05Account.class
+com/novohq/app/TC06ChangePassword.class
+com/novohq/app/TC04MoveMoney.class
+common/TestBase.class

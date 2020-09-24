@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="Test on Chrome(failed)" verbose="0">
+    <parameter name="os" value="OS X"/>
+    <parameter name="osVersion" value="Catalina"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browserVersion" value="83.0"/>
+    <parameter name="resolution" value="1920x1080"/>
+    <classes>
+      <class name="com.novohq.app.TC03Activity">
+        <methods>
+          <include name="tc04Search"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="tc01Tabs"/>
+          <include name="tc03Filters"/>
+          <include name="browserStack"/>
+          <include name="tc02DateFilter"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC03Activity -->
+      <class name="com.novohq.app.TC02Dashboard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tc04AddPayeePaperCheck"/>
+          <include name="setUp"/>
+          <include name="tc06SendMoneyToPayee"/>
+          <include name="browserStack"/>
+          <include name="tc05RecentActivity"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC02Dashboard -->
+      <class name="com.novohq.app.TC05AccountInfo">
+        <methods>
+          <include name="tc01Tab"/>
+          <include name="tc02ScreenText"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tc04DeleteTravelNotice"/>
+          <include name="setUp"/>
+          <include name="tc06EditInformation"/>
+          <include name="browserStack"/>
+          <include name="tc07Statements"/>
+          <include name="tc05VerifyScreenTextOfAccountInfo"/>
+          <include name="tc03TravelNotice"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC05AccountInfo -->
+      <class name="com.novohq.app.TC07ForgotPassword">
+        <methods>
+          <include name="tc16ValidPassword"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tc08BlankSSN"/>
+          <include name="tc17ScreenText"/>
+          <include name="browserStack"/>
+          <include name="tc09ValidSSN"/>
+          <include name="tc02VerifyWithBlankEmail"/>
+          <include name="tc03VerifyWithRegisteredEmail"/>
+          <include name="tc10ScreenText"/>
+          <include name="tc13ScreenText"/>
+          <include name="tc12ValidOTP"/>
+          <include name="setUp"/>
+          <include name="tc05VerifyEmptyBirthday"/>
+          <include name="tc06VerifyValidBirthday"/>
+          <include name="tc15BlankPassword"/>
+          <include name="tc07ScreenText"/>
+          <include name="tc04VerifyBirthDateScreenText"/>
+          <include name="tc18Login"/>
+          <include name="tc11BlankOTP"/>
+          <include name="tc01VerifyForgotPasswordMainScreenText"/>
+          <include name="tc14PlaceholdersResetScreen"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC07ForgotPassword -->
+      <class name="com.novohq.app.TC04MakeAPayment">
+        <methods>
+          <include name="tc03DeleteAccount"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tc08MakePaperCheckPayment"/>
+          <include name="browserStack"/>
+          <include name="tc02TransferFundToNovo"/>
+          <include name="tc07MakeACHPayment"/>
+          <include name="setUp"/>
+          <include name="tc04DeletePayees"/>
+          <include name="tc05AddPayeeElectronicTransfer"/>
+          <include name="tc09DeletePayees"/>
+          <include name="tc01AccountToNovo"/>
+          <include name="tc06AddPayeePaperCheck"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC04MakeAPayment -->
+      <class name="com.novohq.app.TC06ChangePassword">
+        <methods>
+          <include name="tc02Placeholders"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="browserStack"/>
+          <include name="tc06ValidPassword"/>
+          <include name="tc01ScreenText"/>
+          <include name="tc07ValidPassword"/>
+          <include name="tc08VerifyLogout"/>
+          <include name="tc03BlankPassword"/>
+        </methods>
+      </class> <!-- com.novohq.app.TC06ChangePassword -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
