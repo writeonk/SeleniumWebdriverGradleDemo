@@ -31,8 +31,9 @@ https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html
 - Browse the project from your local machine.
 
 
-### Run Project and Get a Report 
+### Run Project and Get a Report & logs
 - Run TestNg Suite
 - wait till project run completly. Once it finished.
 - Expand Report folder and you will find latest report there with latest date and time.
 - Click on Report and open with web-browser
+- Find logs in log folder
