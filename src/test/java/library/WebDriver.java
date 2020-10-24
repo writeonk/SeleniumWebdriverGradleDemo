@@ -4,7 +4,7 @@
 
 package library;
 
-import common.TestBase;
+import common.TestBaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class WebDriver extends TestBase {
+public class WebDriver extends TestBaseClass {
 
     public void enterText(By locator, String text) {
         WebElement element = driver.findElement(locator);
@@ -91,5 +91,10 @@ public class WebDriver extends TestBase {
             salt.append(SaltChars.charAt(index));
         }
         return salt.toString();
+    }
+
+    public void openURL(String url) {
+
+        driver.get(url);
     }
 }
