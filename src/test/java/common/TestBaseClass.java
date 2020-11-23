@@ -82,7 +82,7 @@ public class TestBaseClass {
     @AfterSuite(alwaysRun = true)
     public void tearDown() throws EncryptedDocumentException {
 
-        driver.quit();
+    //    driver.quit();
         extent.flush();
     }
 

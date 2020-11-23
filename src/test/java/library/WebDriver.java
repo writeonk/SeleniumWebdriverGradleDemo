@@ -7,6 +7,7 @@ package library;
 import common.TestBaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -45,6 +46,26 @@ public class WebDriver extends TestBaseClass {
     public void selectValueOnDropDown(By locator, String Text) {
         Select selectValue = new Select(driver.findElement(locator));
         selectValue.selectByVisibleText(Text);
+    }
+
+    public void mouseMovement1(By locatorFrom, By locatorTo) {
+
+        Actions builder = new Actions(driver);
+        WebElement from = driver.findElement(locatorFrom);
+        WebElement to = driver.findElement(locatorTo);
+
+        builder.dragAndDrop(from, to).perform();
+    }
+
+    public void mouseMovement(By locatorFrom, By locatorTo) {
+
+        Actions actions = new Actions(driver);
+        WebElement mainMenu = driver.findElement(locatorFrom);
+        actions.moveToElement(mainMenu);
+
+        WebElement subMenu = driver.findElement(locatorTo);
+        actions.moveToElement(subMenu);
+        actions.click().build().perform();
     }
 
     public void selectValueOnCheckBox(By chkBoxCollection, By labelText, By getInput, String Text) {
@@ -97,4 +118,13 @@ public class WebDriver extends TestBaseClass {
 
         driver.get(url);
     }
+
+    public void list(By locator) {
+        List<WebElement> list = driver.findElements(locator);
+        for (int i = 1; i <= list.size(); i++) {
+            WebElement element = driver.findElement(locator);
+            System.out.println(element.getText());
+        }
+    }
+
 }
